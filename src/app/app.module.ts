@@ -12,7 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CoreModule,
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [ AppComponent ]
