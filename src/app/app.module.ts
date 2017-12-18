@@ -8,14 +8,13 @@ import { CoreModule }       from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     CoreModule,
     AppRoutingModule
-
+  ],
+  declarations: [
+    AppComponent
   ],
   providers: [],
   bootstrap: [ AppComponent ]
