@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutMeComponent } from './about-me.component';
+import { BlogComponent } from './blog.component';
 
 const routes:Routes = [
-  // { path: '', redirectTo: 'about-me', pathMatch: 'full'},
-  { path: '',    component: AboutMeComponent },
+  // { path: '', redirectTo: 'blog', pathMatch: 'full'},
+  { path: '', component: BlogComponent },
 ]
 
 @NgModule({
@@ -14,4 +14,4 @@ const routes:Routes = [
   exports: [RouterModule]
 })
 
-export class AboutMeRoutingModule {}
+export class BlogRoutingModule {}
