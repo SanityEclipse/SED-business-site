@@ -1,1 +1,8 @@
+nav {
+  font-family: 'Oswald', sans-serif;
+}
 
+li > a {
+  color: #000000;
+  font-size: 3em;
+}
