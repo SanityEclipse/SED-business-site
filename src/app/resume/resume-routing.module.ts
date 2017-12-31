@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 
 import { Routes, RouterModule } from '@angular/router';
 
-import { BlogComponent } from './blog.component';
+import { ResumeComponent } from './resume.component';
 
 const routes:Routes = [
   // { path: '', redirectTo: 'blog', pathMatch: 'full'},
-  { path: '', component: BlogComponent },
+  { path: '', component: ResumeComponent },
 ]
 
 @NgModule({
@@ -14,4 +14,4 @@ const routes:Routes = [
   exports: [RouterModule]
 })
 
-export class BlogRoutingModule {}
+export class ResumeRoutingModule {}
