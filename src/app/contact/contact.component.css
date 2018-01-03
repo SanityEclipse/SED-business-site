@@ -1,0 +1,10 @@
+.panel {
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+a > span {
+  color: #ffffff;
+  font-size: 4em;
+}
