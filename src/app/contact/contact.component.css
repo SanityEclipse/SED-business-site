@@ -4,7 +4,16 @@
   opacity: 0.8;
 }
 
+a {
+  float: left; 
+}
+
 a > span {
   color: #ffffff;
   font-size: 4em;
+}
+
+img {
+  height: auto;
+  width: 12vh;
 }
