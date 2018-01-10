@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-resume',
   template:
   `
-  <h1>This is the 'Resumè' Component</h1>
+  <div class="container">
+    <h1>This is the 'Resumè' Component</h1>
+  </div>
   `,
   styles:[]
 })
