@@ -15,31 +15,30 @@ import {
   animations: [
     trigger('routerAnimation', [
       transition('* <=> *', [
-        // Initial state of new route
+        // INITIAL STATE
         query(':enter',
           style({
+            opacity: 0,
             position: 'fixed',
             width:'100%',
-            transform: 'translateX(-100%)'
           }), {optional:true}
         ),
-        // move page off screen right on leave
+        // PAGE LEAVING
         query(':leave',
           animate('500ms ease',
             style({
+              opacity: 0,
               position: 'fixed',
               width:'100%',
-              transform: 'translateX(100%)'
             })
           ),
           {optional:true}
         ),
-        // move page in screen from left to right
+        // PAGE ENTERING
         query(':enter',
           animate('500ms ease',
             style({
               opacity: 1,
-              transform: 'translateX(0%)'
             })
           ),
           {optional:true}
