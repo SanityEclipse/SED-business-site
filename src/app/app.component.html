@@ -1,13 +1,9 @@
-<div class="container">
+<core-header></core-header>
 
-  <core-header></core-header>
+<core-navbar></core-navbar>
 
-  <core-navbar></core-navbar>
+<main [@routerAnimation]="getRouteAnimation(route)">
+  <router-outlet #route="outlet"></router-outlet>
+</main>
 
-  <div [@routerAnimation]="getRouteAnimation(route)">
-    <router-outlet #route="outlet"></router-outlet>
-  </div>
-
-  <core-footer></core-footer>
-
-</div>
+<core-footer></core-footer>
