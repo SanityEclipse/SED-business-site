@@ -23,14 +23,6 @@ export class DevExperienceService {
 
   getDevExperiences (): Observable<DevExperience[]> {
     return this.http.get<DevExperience[]>(this.devExperiencesUrl)
-      // .pipe(
-      //   tap(devExperiences => this.log(`fetched devExperiences`)),
-      //   catchError(this.handleError('getDevExperiences', []))
-      // );
   }
-
-  // private log(message: string) {
-  //   this.devExperienceService.add('HeroService: ' + message);
-  // }
 
 }

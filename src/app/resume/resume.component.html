@@ -1,18 +1,24 @@
 <div class="container">
 
-
   <h1>Developer Experience</h1>
 
   <div *ngFor="let devExperience of devExperiences; let i = index">
+
     <h3>{{devExperience.title}}</h3>
-    <ul>
-      <li>{{devExperience.date}}</li>
-        <h4> Projects Completed: </h4>
-        <li *ngFor="let subDevExp of devExperience['projects']">
-          {{subDevExp.name}}
+
+    <h4>{{devExperience.date}}</h4>
+    <h4> Projects Completed: </h4>
+      <div *ngFor="let subDevExp of devExperience['projects']">
+        <p>
+          <b>{{subDevExp.name}}</b>
+        </p>
+        <p>
           {{subDevExp.desc}}
-        </li>
-    </ul>
+        </p>
+      </div>
   </div>
+
+  <h1>Education</h1>
+
 
 </div>
