@@ -61,9 +61,74 @@ export class InMemoryDataService implements InMemoryDbService {
         date: "January 2008 - December 2010"
       }
     ];
+    const mySkills =[
+      {
+        id: 0,
+        skill: "AGILE Workflow"
+      },
+      {
+        id: 1,
+        skill: "Angular 2(5) w/TypeScript"
+      },
+      {
+        id: 2,
+        skill: "API Integration"
+      },
+      {
+        id: 3,
+        skill: "Bootstrap"
+      },
+      {
+        id: 4,
+        skill: "CSS 3"
+      },
+      {
+        id: 5,
+        skill: "ExpressJS"
+      },
+      {
+        id: 6,
+        skill: "git/GitHub"
+      },
+      {
+        id: 7,
+        skill: "JavaScript"
+      },
+      {
+        id: 8,
+        skill:"jQuery"
+      },
+      {
+        id: 9,
+        skill:"Laravel"
+      },
+      {
+        id: 10,
+        skill:"Mocha/Chai/Jest"
+      },
+      {
+        id: 11,
+        skill:"Node.js"
+      },
+      {
+        id: 12,
+        skill:"PHP"
+      },
+      {
+        id: 13,
+        skill:"ReactJS"
+      },
+      {
+        id: 14,
+        skill:"Redux"
+      },
+      {
+        id: 15,
+        skill: "MySQL / PostgreSQL"
+      },
+    ]
 
-
-    return { devExps, eduExps };
+    return { devExps, eduExps, mySkills };
 
   }
 

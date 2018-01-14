@@ -26,4 +26,12 @@
     <p> {{ eduExp.date }} </p>
   </div>
 
+  <h1> Languages/Libraries/Frameworks/Skills </h1>
+
+  <div>
+    <ul *ngFor="let mySkill of mySkills; let i = index">
+      <li> {{ mySkill.skill}} </li>
+    </ul>
+  </div>
+
 </div>

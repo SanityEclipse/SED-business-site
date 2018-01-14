@@ -14,6 +14,7 @@ import { AppComponent }     from './app.component';
 
 import { DevExpService } from './resume/dev-exp.service';
 import { EduExpService } from './resume/edu-exp.service';
+import { MySkillService } from './resume/my-skill.service';
 
 @NgModule({
   imports: [
@@ -31,7 +32,7 @@ import { EduExpService } from './resume/edu-exp.service';
   declarations: [
     AppComponent
   ],
-  providers: [ DevExpService, EduExpService ],
+  providers: [ DevExpService, EduExpService, MySkillService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

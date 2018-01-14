@@ -2,9 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { DevExperience } from "./dev-experience";
 import { EduExperience } from "./edu-experience";
+import { MySkill } from './my-skill';
 
 import { DevExpService } from "./dev-exp.service";
 import { EduExpService } from "./edu-exp.service";
+import { MySkillService } from './my-skill.service';
 
 @Component({
   selector: 'app-resume',
@@ -15,17 +17,20 @@ import { EduExpService } from "./edu-exp.service";
 
 export class ResumeComponent implements OnInit {
 
-  devExps: DevExperience[] = [];
-  eduExps: EduExperience[] = [];
+  devExps:  DevExperience[] = [];
+  eduExps:  EduExperience[] = [];
+  mySkills: MySkill[]       = [];
 
   constructor (
     private DevExpService: DevExpService,
-    private EduExpService: EduExpService
+    private EduExpService: EduExpService,
+    private MySkillService: MySkillService
   ) {}
 
   ngOnInit(){
     this.getDevExps();
     this.getEduExps();
+    this.getMySkills();
   }
 
   getDevExps(): void {
@@ -36,6 +41,11 @@ export class ResumeComponent implements OnInit {
   getEduExps(): void {
     this.EduExpService.getEduExps()
       .subscribe(eduExps => this.eduExps = eduExps);
+  }
+
+  getMySkills(): void {
+    this.MySkillService.getMySkills()
+      .subscribe(mySkills => this.mySkills = mySkills);
   }
 
 }
