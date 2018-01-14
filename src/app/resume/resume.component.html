@@ -21,7 +21,9 @@
   <h1>Education</h1>
 
   <div *ngFor="let eduExp of eduExps; let i = index">
-    <p> {{ eduExp.school }} </p>
+    <p><b> {{ eduExp.degree }} </b></p>
+    <p><em> {{ eduExp.school }} </em></p>
+    <p> {{ eduExp.date }} </p>
   </div>
 
 </div>
