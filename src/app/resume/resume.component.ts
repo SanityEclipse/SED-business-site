@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DevExperience } from "./devExperience";
+import { DevExperienceService } from "./devExperience.service";
+
 
 @Component({
   selector: 'app-resume',
@@ -7,4 +10,21 @@ import { Component } from '@angular/core';
 })
 
 
-export class ResumeComponent {}
+export class ResumeComponent implements OnInit {
+
+  devExperiences: DevExperience[] = [];
+
+  constructor (
+    private DevExperienceService: DevExperienceService
+  ) {}
+
+  ngOnInit(){
+    this.getDevExperiences();
+  }
+
+  getDevExperiences(): void {
+    this.DevExperienceService.getDevExperiences()
+      .subscribe(devExperiences => this.devExperiences = devExperiences);
+  }
+
+}

@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent }     from './app.component';
 
+import { DevExperienceService } from './resume/devExperience.service';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import { AppComponent }     from './app.component';
   declarations: [
     AppComponent
   ],
-  providers: [],
+  providers: [ DevExperienceService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

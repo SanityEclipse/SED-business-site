@@ -1,3 +1,18 @@
 <div class="container">
-  <h1>This is the 'Resumè' Component</h1>
+
+
+  <h1>Developer Experience</h1>
+
+  <div *ngFor="let devExperience of devExperiences; let i = index">
+    <h3>{{devExperience.title}}</h3>
+    <ul>
+      <li>{{devExperience.date}}</li>
+        <h4> Projects Completed: </h4>
+        <li *ngFor="let subDevExp of devExperience['projects']">
+          {{subDevExp.name}}
+          {{subDevExp.desc}}
+        </li>
+    </ul>
+  </div>
+
 </div>

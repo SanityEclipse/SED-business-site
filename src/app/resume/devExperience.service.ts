@@ -15,11 +15,10 @@ const httpOptions = {
 
 export class DevExperienceService {
 
-  private devExperiencesUrl = 'api/dev-experiences';
+  private devExperiencesUrl = 'api/devExperiences';
 
   constructor(
-    private http: HttpClient,
-    private devExperienceService: HttpHeaders
+    private http: HttpClient
   ) {}
 
   getDevExperiences (): Observable<DevExperience[]> {
