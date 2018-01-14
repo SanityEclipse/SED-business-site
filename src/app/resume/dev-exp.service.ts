@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { DevExperience } from './devExperience';
+import { DevExperience } from './dev-experience';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -13,16 +13,16 @@ const httpOptions = {
 
 @Injectable()
 
-export class DevExperienceService {
+export class DevExpService {
 
-  private devExperiencesUrl = 'api/devExperiences';
+  private devExpsUrl = 'api/devExps';
 
   constructor(
     private http: HttpClient
   ) {}
 
-  getDevExperiences (): Observable<DevExperience[]> {
-    return this.http.get<DevExperience[]>(this.devExperiencesUrl)
+  getDevExps (): Observable<DevExperience[]> {
+    return this.http.get<DevExperience[]>(this.devExpsUrl)
   }
 
 }

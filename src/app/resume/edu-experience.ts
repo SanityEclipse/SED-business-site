@@ -1,4 +1,4 @@
-export class EducationExp {
+export class EduExperience {
   id: number;
   degree: string;
   school: string;

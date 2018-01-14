@@ -4,7 +4,7 @@ export class InMemoryDataService implements InMemoryDbService {
 
   createDb() {
 
-    const devExperiences = [
+    const devExps = [
       {
         id: 1,
         title: 'Web Devloper | Freelance and Contract',
@@ -63,7 +63,7 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
 
 
-    return { devExperiences, educationExps };
+    return { devExps, educationExps };
 
   }
 

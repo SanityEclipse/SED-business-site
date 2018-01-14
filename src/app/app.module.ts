@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent }     from './app.component';
 
-import { DevExperienceService } from './resume/devExperience.service';
+import { DevExpService } from './resume/dev-exp.service';
 
 @NgModule({
   imports: [
@@ -30,7 +30,7 @@ import { DevExperienceService } from './resume/devExperience.service';
   declarations: [
     AppComponent
   ],
-  providers: [ DevExperienceService ],
+  providers: [ DevExpService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

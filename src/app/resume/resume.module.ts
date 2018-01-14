@@ -6,8 +6,6 @@ import { ResumeRoutingModule } from './resume-routing.module';
 
 import { ResumeComponent } from './resume.component';
 
-import { DevExperienceService } from './devExperience.service'
-
 @NgModule({
   imports:[ CommonModule, ResumeRoutingModule ],
   exports:[],
