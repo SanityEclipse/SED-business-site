@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DevExperience } from "./dev-experience";
+import { EduExperience } from "./edu-experience";
 
 import { DevExpService } from "./dev-exp.service";
+import { EduExpService } from "./edu-exp.service";
 
 @Component({
   selector: 'app-resume',
@@ -13,19 +15,27 @@ import { DevExpService } from "./dev-exp.service";
 
 export class ResumeComponent implements OnInit {
 
-  devExperiences: DevExperience[] = [];
+  devExps: DevExperience[] = [];
+  eduExps: EduExperience[] = [];
 
   constructor (
     private DevExpService: DevExpService,
+    private EduExpService: EduExpService
   ) {}
 
   ngOnInit(){
     this.getDevExps();
+    this.getEduExps();
   }
 
   getDevExps(): void {
     this.DevExpService.getDevExps()
-      .subscribe(devExperiences => this.devExperiences = devExperiences);
+      .subscribe(devExps => this.devExps = devExps);
+  }
+
+  getEduExps(): void {
+    this.EduExpService.getEduExps()
+      .subscribe(eduExps => this.eduExps = eduExps);
   }
 
 }

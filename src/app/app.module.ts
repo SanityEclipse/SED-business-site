@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent }     from './app.component';
 
 import { DevExpService } from './resume/dev-exp.service';
+import { EduExpService } from './resume/edu-exp.service';
 
 @NgModule({
   imports: [
@@ -30,7 +31,7 @@ import { DevExpService } from './resume/dev-exp.service';
   declarations: [
     AppComponent
   ],
-  providers: [ DevExpService ],
+  providers: [ DevExpService, EduExpService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

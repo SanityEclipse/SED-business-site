@@ -2,13 +2,13 @@
 
   <h1>Developer Experience</h1>
 
-  <div *ngFor="let devExperience of devExperiences; let i = index">
+  <div *ngFor="let devExp of devExps; let i = index">
 
-    <h3>{{devExperience.title}}</h3>
+    <h3>{{devExp.title}}</h3>
 
-    <h4>{{devExperience.date}}</h4>
+    <h4>{{devExp.date}}</h4>
     <h4> Projects Completed: </h4>
-      <div *ngFor="let subDevExp of devExperience['projects']">
+      <div *ngFor="let subDevExp of devExp['projects']">
         <p>
           <b>{{subDevExp.name}}</b>
         </p>
@@ -19,5 +19,9 @@
   </div>
 
   <h1>Education</h1>
+
+  <div *ngFor="let eduExp of eduExps; let i = index">
+    <p> {{ eduExp.school }} </p>
+  </div>
 
 </div>

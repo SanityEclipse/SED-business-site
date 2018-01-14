@@ -47,7 +47,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ]
        }
     ];
-    const educationExps = [
+    const eduExps = [
       {
         id: 1,
         degree: "Full Stack Immersive Program",
@@ -63,7 +63,7 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
 
 
-    return { devExps, educationExps };
+    return { devExps, eduExps };
 
   }
 
