@@ -5,6 +5,8 @@ import { HttpClientModule }        from '@angular/common/http';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }            from './in-memory-data.service';
+import { InMemoryDataService2 }           from './in-memory-data2.service';
+
 
 import { CoreModule }       from './core/core.module';
 
@@ -13,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent }     from './app.component';
 
 import { DevExperienceService } from './resume/devExperience.service';
+import { EducationExpService }  from './resume/educationExp.service';
 
 @NgModule({
   imports: [
@@ -30,7 +33,7 @@ import { DevExperienceService } from './resume/devExperience.service';
   declarations: [
     AppComponent
   ],
-  providers: [ DevExperienceService ],
+  providers: [ DevExperienceService, EducationExpService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
