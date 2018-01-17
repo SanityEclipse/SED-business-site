@@ -28,10 +28,40 @@
 
   <h1> Languages/Libraries/Frameworks/Skills </h1>
 
-  <div>
-    <ul *ngFor="let mySkill of mySkills; let i = index">
-      <li> {{ mySkill.skill}} </li>
-    </ul>
+  <div class="row">
+
+    <div class="col-md-3">
+      <ul *ngFor="let mySkill of mySkills; let i = index">
+        <li *ngIf="mySkill.category == 'front'">
+          {{ mySkill.skill }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul *ngFor="let mySkill of mySkills; let i = index">
+        <li *ngIf="mySkill.category == 'framework'">
+          {{ mySkill.skill }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul *ngFor="let mySkill of mySkills; let i = index">
+        <li *ngIf="mySkill.category == 'back'">
+          {{ mySkill.skill }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul *ngFor="let mySkill of mySkills; let i = index">
+        <li *ngIf="mySkill.category == 'dev'">
+          {{ mySkill.skill }}
+        </li>
+      </ul>
+    </div>
+
   </div>
 
 </div>

@@ -13,18 +13,18 @@ export class InMemoryDataService implements InMemoryDbService {
           {
             id: 1,
             name: "Office Anywhere - Developer, Scrum Master",
-            desc: "A full stack utility application for locating and rating mobile workspaces. Built with Node.js w/ Express, Google API, Workfrom API, PostgreSQL, and npm."
+            desc: "A full category utility application for locating and rating mobile workspaces. Built with Node.js w/ Express, Google API, Workfrom API, PostgreSQL, and npm."
           },
           {
             id: 2,
             name: "The Flame Paladin Saga — Developer, Animator, Asset Creator",
-            desc: "A full stack ‘platformer’ game application, complete with score saving, and a dynamic leaderboard. Built with Angular 2 w/ TypeScript, Node.js w/ Express, PostgreSQL, Knex.js, and npm.",
+            desc: "A full category ‘platformer’ game application, complete with score saving, and a dynamic leaderboard. Built with Angular 2 w/ TypeScript, Node.js w/ Express, PostgreSQL, Knex.js, and npm.",
           },
         ]
       },
       {
         id: 2,
-        title: 'Full Stack Developer | Rebric.io',
+        title: 'Full category Developer | Rebric.io',
         date: 'July 2017 - October 2017',
         projects: [
          {
@@ -50,7 +50,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const eduExps = [
       {
         id: 1,
-        degree: "Full Stack Immersive Program",
+        degree: "Full category Immersive Program",
         school: "Galvanize - Platte",
         date: "July 2016 - December 2016"
       },
@@ -64,67 +64,98 @@ export class InMemoryDataService implements InMemoryDbService {
     const mySkills =[
       {
         id: 0,
-        skill: "AGILE Workflow"
+        skill: "AGILE Workflow",
+        category: "dev"
       },
       {
         id: 1,
-        skill: "Angular 2(5) w/TypeScript"
+        skill: "Angular 2(5)",
+        category: "framework"
       },
       {
         id: 2,
-        skill: "API Integration"
+        skill: "API Integration",
+        category: "back"
       },
       {
         id: 3,
-        skill: "Bootstrap"
+        skill: "Bootstrap",
+        category: "front"
       },
       {
         id: 4,
-        skill: "CSS 3"
+        skill: "CSS 3",
+        category: "framework"
       },
       {
         id: 5,
-        skill: "ExpressJS"
+        skill: "ExpressJS",
+        category: "back"
       },
       {
         id: 6,
-        skill: "git/GitHub"
+        skill: "git/GitHub",
+        category: "dev"
       },
       {
         id: 7,
-        skill: "JavaScript"
+        skill: "JavaScript",
+        category: "front"
       },
       {
         id: 8,
-        skill:"jQuery"
+        skill:"jQuery",
+        category: "framework"
       },
       {
         id: 9,
-        skill:"Laravel"
+        skill:"Laravel",
+        category: "framework"
       },
       {
         id: 10,
-        skill:"Mocha/Chai/Jest"
+        skill:"Mocha/Chai/Jest",
+        category: "dev"
       },
       {
         id: 11,
-        skill:"Node.js"
+        skill:"Node.js",
+        category: "back"
       },
       {
         id: 12,
-        skill:"PHP"
+        skill:"PHP",
+        category: "back"
       },
       {
         id: 13,
-        skill:"ReactJS"
+        skill:"ReactJS",
+        category: "framework"
       },
       {
         id: 14,
-        skill:"Redux"
+        skill:"Redux",
+        category: "framework"
       },
       {
         id: 15,
-        skill: "MySQL / PostgreSQL"
+        skill: "MySQL / PostgreSQL",
+        category: "back"
+      },
+      {
+        id: 16,
+        skill: "HTML 5",
+        category: "front"
+      },
+      {
+        id: 17,
+        skill: "Angular 1.x",
+        category: "framework"
+      },
+      {
+        id: 18,
+        skill: "TypeScript",
+        category: "front"
       },
     ]
 
