@@ -1,36 +1,42 @@
 <div class="container">
 
-  <h1>Developer Experience</h1>
+  <div class="col-md-9">
 
-  <div *ngFor="let devExp of devExps; let i = index">
+    <h1>Developer Experience</h1>
 
-    <h3>{{devExp.title}}</h3>
+    <div *ngFor="let devExp of devExps; let i = index">
 
-    <h4>{{devExp.date}}</h4>
-    <h4> Projects Completed: </h4>
-      <div *ngFor="let subDevExp of devExp['projects']">
-        <p>
-          <b>{{subDevExp.name}}</b>
-        </p>
-        <p>
-          {{subDevExp.desc}}
-        </p>
-      </div>
+      <h3>{{devExp.title}}</h3>
+
+      <h4>{{devExp.date}}</h4>
+      <h4> Projects Completed: </h4>
+        <div *ngFor="let subDevExp of devExp['projects']">
+          <p>
+            <b>{{subDevExp.name}}</b>
+          </p>
+          <p>
+            {{subDevExp.desc}}
+          </p>
+        </div>
+    </div>
+
+    <h1>Education</h1>
+
+    <div *ngFor="let eduExp of eduExps; let i = index">
+      <p><b> {{ eduExp.degree }} </b></p>
+      <p><em> {{ eduExp.school }} </em></p>
+      <p> {{ eduExp.date }} </p>
+    </div>
+
   </div>
 
-  <h1>Education</h1>
+  <div class="col-md-3">
 
-  <div *ngFor="let eduExp of eduExps; let i = index">
-    <p><b> {{ eduExp.degree }} </b></p>
-    <p><em> {{ eduExp.school }} </em></p>
-    <p> {{ eduExp.date }} </p>
-  </div>
+    <h1> Skills </h1>
 
-  <h1> Languages/Libraries/Frameworks/Skills </h1>
+    <span> Front End </span>
 
-  <div class="row">
-
-    <div class="col-md-3">
+    <div class="row">
       <ul *ngFor="let mySkill of mySkills; let i = index">
         <li *ngIf="mySkill.category == 'front'">
           {{ mySkill.skill }}
@@ -38,7 +44,10 @@
       </ul>
     </div>
 
-    <div class="col-md-3">
+    <span> Frameworks </span>
+
+
+    <div class="row">
       <ul *ngFor="let mySkill of mySkills; let i = index">
         <li *ngIf="mySkill.category == 'framework'">
           {{ mySkill.skill }}
@@ -46,7 +55,9 @@
       </ul>
     </div>
 
-    <div class="col-md-3">
+    <span> Backend / Databases </span>
+
+    <div class="row">
       <ul *ngFor="let mySkill of mySkills; let i = index">
         <li *ngIf="mySkill.category == 'back'">
           {{ mySkill.skill }}
@@ -54,7 +65,9 @@
       </ul>
     </div>
 
-    <div class="col-md-3">
+    <span>Development Process </span>
+
+    <div class="row">
       <ul *ngFor="let mySkill of mySkills; let i = index">
         <li *ngIf="mySkill.category == 'dev'">
           {{ mySkill.skill }}
