@@ -46,7 +46,7 @@ export class ResumeComponent implements OnInit {
   getMySkills(): void {
     this.MySkillService.getMySkills()
       .subscribe(mySkills => this.mySkills = mySkills
-        .sort(function( a, b ) {
+        .sort(( a, b ) => {
           let x = a.skill.toLowerCase();
           let y = b.skill.toLowerCase();
           if (x < y) {
