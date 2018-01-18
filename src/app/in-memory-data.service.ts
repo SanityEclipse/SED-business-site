@@ -61,7 +61,7 @@ export class InMemoryDataService implements InMemoryDbService {
         date: "January 2008 - December 2010"
       }
     ];
-    const mySkills =[
+    const mySkills = [
       {
         id: 0,
         skill: "AGILE Workflow",
@@ -158,8 +158,29 @@ export class InMemoryDataService implements InMemoryDbService {
         category: "front"
       },
     ]
+    const portProjs = [
+      {
+        id: 0,
+        title: "Rebric.io Business Site",
+        img: "../assets/images/rebric_laptop.jpg",
+        desc: "Chase after silly colored fish toys around the house Cat ipsum dolor sit amet, purr while eating.",
+        url: "rebric.io",
+      },
+      {
+        id: 1,
+        title: "Office Anywhere",
+        img: "../assets/images/office_anywhere.jpg",
+        desc: "The fat cat sat on the mat bat away with paws get video posted to internet for chasing red dot cat fur is the new black.",
+        url: "placeholder"
+      },
+    ];
 
-    return { devExps, eduExps, mySkills };
+    return {
+      devExps,
+      eduExps,
+      mySkills,
+      portProjs,
+    };
 
   }
 

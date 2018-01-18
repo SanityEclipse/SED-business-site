@@ -1,4 +1,33 @@
-<div class="container">
+<div *ngFor="let portProj of portProjs; let i = index" class="container">
+
+  <div *ngIf="portProj.id === 0" class="row" id="{{ portProj.id }}">
+    <div class="col-md-7">
+      <img class="img-responsive img-rounded pull-left" src="{{ portProj.img }}"/>
+    </div>
+    <div class="col-md-5">
+      <h3> {{ portProj.title }} </h3>
+      <p>  {{ portProj.desc }}  </p>
+      <div class=text-center>
+        <a class="btn" role="button" href="{{ portProj.url }}">View</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-md-7">
+      <img class="img-responsive img-rounded pull-left" src="../assets/images/rebric_laptop.jpg"/>
+    </div>
+    <div class="col-md-5">
+      <h3>Rebric.io Business Site</h3>
+      <p>
+        Chase after silly colored fish toys around the house
+        Cat ipsum dolor sit amet, purr while eating.
+      </p>
+      <div class=text-center>
+        <a class="btn" role="button">View</a>
+      </div>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-md-7">
@@ -74,6 +103,6 @@
         <a class="btn" role="button">View</a>
       </div>
     </div>
-  </div>
+  </div> -->
 
 </div>

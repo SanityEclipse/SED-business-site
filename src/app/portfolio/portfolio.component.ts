@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { PortProj } from './port-proj';
+
+import { PortProjService } from './port-proj.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,4 +11,21 @@ import { Component } from '@angular/core';
 })
 
 
-export class PortfolioComponent {}
+export class PortfolioComponent implements OnInit {
+
+  portProjs: PortProj[];
+
+  constructor(
+    private PortProjService: PortProjService
+  ) {}
+
+  ngOnInit() {
+    this.getPortProjs();
+  }
+
+  getPortProjs(): void {
+    this.PortProjService.getPortProjs()
+      .subscribe(portProjs => this.portProjs = portProjs)
+  }
+
+}
