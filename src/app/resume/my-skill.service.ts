@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
+import 'rxjs/add/operator/map'
 
 import { MySkill } from './my-skill';
 
@@ -22,7 +23,8 @@ export class MySkillService {
   ) {}
 
   getMySkills (): Observable<MySkill[]> {
-    return this.http.get<MySkill[]>(this.mySkillsUrl)
+    return this.http
+      .get<MySkill[]>(this.mySkillsUrl)
   }
 
 }

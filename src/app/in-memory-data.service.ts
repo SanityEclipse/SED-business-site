@@ -85,7 +85,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 4,
         skill: "CSS 3",
-        category: "framework"
+        category: "front"
       },
       {
         id: 5,

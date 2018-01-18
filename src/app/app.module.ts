@@ -12,10 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent }     from './app.component';
 
-import { DevExpService } from './resume/dev-exp.service';
-import { EduExpService } from './resume/edu-exp.service';
-import { MySkillService } from './resume/my-skill.service';
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -32,7 +28,7 @@ import { MySkillService } from './resume/my-skill.service';
   declarations: [
     AppComponent
   ],
-  providers: [ DevExpService, EduExpService, MySkillService ],
+  providers: [],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

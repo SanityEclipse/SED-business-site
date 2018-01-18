@@ -11,9 +11,8 @@ import { MySkillService } from './my-skill.service';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls:[ './resume.component.css' ]
+  styleUrls:[ './resume.component.css' ],
 })
-
 
 export class ResumeComponent implements OnInit {
 
@@ -24,10 +23,11 @@ export class ResumeComponent implements OnInit {
   constructor (
     private DevExpService: DevExpService,
     private EduExpService: EduExpService,
-    private MySkillService: MySkillService
+    private MySkillService: MySkillService,
   ) {}
 
-  ngOnInit(){
+
+  ngOnInit() {
     this.getDevExps();
     this.getEduExps();
     this.getMySkills();
@@ -35,7 +35,7 @@ export class ResumeComponent implements OnInit {
 
   getDevExps(): void {
     this.DevExpService.getDevExps()
-      .subscribe(devExps => this.devExps = devExps);
+      .subscribe(devExps => this.devExps = devExps)
   }
 
   getEduExps(): void {
@@ -45,7 +45,19 @@ export class ResumeComponent implements OnInit {
 
   getMySkills(): void {
     this.MySkillService.getMySkills()
-      .subscribe(mySkills => this.mySkills = mySkills);
+      .subscribe(mySkills => this.mySkills = mySkills
+        .sort(function( a, b ) {
+          let x = a.skill.toLowerCase();
+          let y = b.skill.toLowerCase();
+          if (x < y) {
+            return -1;
+          }
+          if (x > y) {
+            return 1;
+          }
+          return 0;
+        })
+      )
   }
 
 }
