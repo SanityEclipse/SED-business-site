@@ -173,6 +173,27 @@ export class InMemoryDataService implements InMemoryDbService {
         desc: "The fat cat sat on the mat bat away with paws get video posted to internet for chasing red dot cat fur is the new black.",
         url: "placeholder"
       },
+      {
+        id: 2,
+        title:"GitHub",
+        img:"../assets/images/github_laptop.jpg",
+        desc:"Claws in your leg kitty poochy, roll on the floor purring your whiskers off i like big cats and i can not lie.",
+        url:"placeholder"
+      },
+      {
+        id: 3,
+        title:"The Flame Palading Saga",
+        img:"../assets/images/flame_paladin.jpg",
+        desc:"Hiss and stare at nothing then run suddenly away wake up human for food at 4am or ask for petting pounce on unsuspecting person so run outside as soon as door open.",
+        url:"placeholder"
+      },
+      {
+        id: 4,
+        title:"The Last Flame Templar",
+        img:"./assets/images/old_flame_paladin.jpg",
+        desc:"Annoy owner until he gives you food say meow repeatedly until belly rubs, feels good lick the curtain just to be annoying.",
+        url:""
+      }
     ];
 
     return {
