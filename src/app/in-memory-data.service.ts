@@ -163,36 +163,36 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 0,
         title: "Rebric.io Business Site",
         img: "../assets/images/rebric_laptop.jpg",
-        desc: "Chase after silly colored fish toys around the house Cat ipsum dolor sit amet, purr while eating.",
-        url: "rebric.io",
+        desc: "The client-facing website for Rebric.io. Features component-driven architecture, and state management via Redux. Created with ReactJS, Redux, Bootstrap 3.7, and Sass.",
+        url: "http://rebric.io",
       },
       {
         id: 1,
         title: "Office Anywhere",
         img: "../assets/images/office_anywhere.jpg",
-        desc: "The fat cat sat on the mat bat away with paws get video posted to internet for chasing red dot cat fur is the new black.",
-        url: "placeholder"
+        desc: "An app for the pro on the go. Users can search for venues near them that offer work space, and other amenities. Created with Express, NodeJs, Handlebars, and Google API.",
+        url: "https://office-anywhere.herokuapp.com/"
       },
       {
         id: 2,
         title:"GitHub",
         img:"../assets/images/github_laptop.jpg",
-        desc:"Claws in your leg kitty poochy, roll on the floor purring your whiskers off i like big cats and i can not lie.",
-        url:"placeholder"
+        desc:"Interested in my processes (and humble beginnings)? Pay a visit to my GitHub repo.",
+        url:"https://github.com/SanityEclipse"
       },
       {
         id: 3,
-        title:"The Flame Palading Saga",
+        title:"The Flame Paladin Saga",
         img:"../assets/images/flame_paladin.jpg",
-        desc:"Hiss and stare at nothing then run suddenly away wake up human for food at 4am or ask for petting pounce on unsuspecting person so run outside as soon as door open.",
-        url:"placeholder"
+        desc:"A side-scrolling platformer game, complete with a cloud-based scoreboard. Created with Angular 2(5), TypeScript, Phaser(JS), PostgreSQL, and NodeJS.",
+        url:"https://glacial-sierra-53589.herokuapp.com"
       },
       {
         id: 4,
         title:"The Last Flame Templar",
         img:"./assets/images/old_flame_paladin.jpg",
-        desc:"Annoy owner until he gives you food say meow repeatedly until belly rubs, feels good lick the curtain just to be annoying.",
-        url:""
+        desc:" A retro-styled, side-scrolling platforming game. Created with Phaser(JS), Tiled, and Gimp.",
+        url:"https://the-last-flame-paladin.firebaseapp.com/"
       }
     ];
 

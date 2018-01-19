@@ -1,31 +1,35 @@
 <div *ngFor="let portProj of portProjs; let i = index" class="container">
 
-  <div *ngIf="portProj.id === 0 || portProj.id%2 === 0"
-      class="row" id="{{ portProj.id }}">
-    <div class="col-md-7">
-      <img class="img-responsive img-rounded pull-left" src="{{ portProj.img }}"/>
-    </div>
-    <div class="col-md-5">
-      <h3> {{ portProj.title }} </h3>
-      <p>  {{ portProj.desc }}  </p>
-      <div class=text-center>
-        <a class="btn" role="button" href="{{ portProj.url }}">View</a>
+  <section  *ngIf="portProj.id === 0 || portProj.id%2 === 0">
+    <div class="row" id="{{ portProj.id }}">
+      <div class="col-md-7">
+        <img class="img-responsive img-rounded pull-left" src="{{ portProj.img }}"/>
+      </div>
+      <div class="col-md-5">
+        <h3> {{ portProj.title }} </h3>
+        <hr>
+        <p>  {{ portProj.desc }}  </p>
+        <div class=text-center>
+          <a class="btn" role="button" href="{{ portProj.url }}" target="_blank">View</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section >
 
-  <div *ngIf="portProj.id === 1 || portProj.id%2 !== 0"
-      class="row" id="{{ portProj.id }}">
-    <div class="col-md-5">
-      <h3> {{ portProj.title }} </h3>
-      <p>  {{ portProj.desc }}  </p>
-      <div class=text-center>
-        <a class="btn" role="button" href="{{ portProj.url }}">View</a>
+  <section *ngIf="portProj.id === 1 || portProj.id%2 !== 0">
+    <div class="row" id="{{ portProj.id }}">
+      <div class="col-md-5">
+        <h3> {{ portProj.title }} </h3>
+        <hr>
+        <p>  {{ portProj.desc }}  </p>
+        <div class=text-center>
+          <a class="btn" role="button" href="{{ portProj.url }}" target="_blank">View</a>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <img class="img-responsive img-rounded pull-right" src="{{ portProj.img }}"/>
       </div>
     </div>
-    <div class="col-md-7">
-      <img class="img-responsive img-rounded pull-left" src="{{ portProj.img }}"/>
-    </div>
-  </div>
+  </section >
 
 </div>
