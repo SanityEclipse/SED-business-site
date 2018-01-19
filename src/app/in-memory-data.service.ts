@@ -61,7 +61,7 @@ export class InMemoryDataService implements InMemoryDbService {
         date: "January 2008 - December 2010"
       }
     ];
-    const mySkills =[
+    const mySkills = [
       {
         id: 0,
         skill: "AGILE Workflow",
@@ -158,8 +158,50 @@ export class InMemoryDataService implements InMemoryDbService {
         category: "front"
       },
     ]
+    const portProjs = [
+      {
+        id: 0,
+        title: "Rebric.io Business Site",
+        img: "../assets/images/rebric_laptop.jpg",
+        desc: "The client-facing website for Rebric.io. Features component-driven architecture, and state management via Redux. Created with ReactJS, Redux, Bootstrap 3.7, and Sass.",
+        url: "http://rebric.io",
+      },
+      {
+        id: 1,
+        title: "Office Anywhere",
+        img: "../assets/images/office_anywhere.jpg",
+        desc: "An app for the pro on the go. Users can search for venues near them that offer work space, and other amenities. Created with Express, NodeJs, Handlebars, and Google API.",
+        url: "https://office-anywhere.herokuapp.com/"
+      },
+      {
+        id: 2,
+        title:"GitHub",
+        img:"../assets/images/github_laptop.jpg",
+        desc:"Interested in my processes (and humble beginnings)? Pay a visit to my GitHub repo.",
+        url:"https://github.com/SanityEclipse"
+      },
+      {
+        id: 3,
+        title:"The Flame Paladin Saga",
+        img:"../assets/images/flame_paladin.jpg",
+        desc:"A side-scrolling platformer game, complete with a cloud-based scoreboard. Created with Angular 2(5), TypeScript, Phaser(JS), PostgreSQL, and NodeJS.",
+        url:"https://glacial-sierra-53589.herokuapp.com"
+      },
+      {
+        id: 4,
+        title:"The Last Flame Templar",
+        img:"./assets/images/old_flame_paladin.jpg",
+        desc:" A retro-styled, side-scrolling platforming game. Created with Phaser(JS), Tiled, and Gimp.",
+        url:"https://the-last-flame-paladin.firebaseapp.com/"
+      }
+    ];
 
-    return { devExps, eduExps, mySkills };
+    return {
+      devExps,
+      eduExps,
+      mySkills,
+      portProjs,
+    };
 
   }
 

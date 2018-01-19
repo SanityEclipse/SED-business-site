@@ -16,14 +16,14 @@ import { MySkillService } from './my-skill.service';
 
 export class ResumeComponent implements OnInit {
 
-  devExps:  DevExperience[] = [];
-  eduExps:  EduExperience[] = [];
-  mySkills: MySkill[]       = [];
+  devExps  : DevExperience[] = [];
+  eduExps  : EduExperience[] = [];
+  mySkills : MySkill[]       = [];
 
   constructor (
-    private DevExpService: DevExpService,
-    private EduExpService: EduExpService,
-    private MySkillService: MySkillService,
+    private DevExpService  : DevExpService,
+    private EduExpService  : EduExpService,
+    private MySkillService : MySkillService,
   ) {}
 
 

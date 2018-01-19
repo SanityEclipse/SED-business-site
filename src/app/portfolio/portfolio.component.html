@@ -1,64 +1,35 @@
-<div class="container">
+<div *ngFor="let portProj of portProjs; let i = index" class="container">
 
-  <div class="row">
-    <div class="col-md-7">
-      <img class="img-responsive pull-left" src="../assets/images/rebric_laptop.jpg"/>
+  <section  *ngIf="portProj.id === 0 || portProj.id%2 === 0">
+    <div class="row" id="{{ portProj.id }}">
+      <div class="col-md-7">
+        <img class="img-responsive img-rounded pull-left" src="{{ portProj.img }}"/>
+      </div>
+      <div class="col-md-5">
+        <h3> {{ portProj.title }} </h3>
+        <hr>
+        <p>  {{ portProj.desc }}  </p>
+        <div class=text-center>
+          <a class="btn" role="button" href="{{ portProj.url }}" target="_blank">View</a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-5">
-      <h3>Rebric.io Business Site</h3>
-      <p>
-        Chase after silly colored fish toys around the house
-        Cat ipsum dolor sit amet, purr while eating.
-      </p>
-    </div>
-  </div>
+  </section >
 
-  <div class="row">
-    <div class="col-md-5">
-      <h3>Office Anywhere</h3>
-      <p>
-        The fat cat sat on the mat bat away with paws get video posted to internet for chasing red dot cat fur is the new black .
-      </p>
+  <section *ngIf="portProj.id === 1 || portProj.id%2 !== 0">
+    <div class="row" id="{{ portProj.id }}">
+      <div class="col-md-5">
+        <h3> {{ portProj.title }} </h3>
+        <hr>
+        <p>  {{ portProj.desc }}  </p>
+        <div class=text-center>
+          <a class="btn" role="button" href="{{ portProj.url }}" target="_blank">View</a>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <img class="img-responsive img-rounded pull-right" src="{{ portProj.img }}"/>
+      </div>
     </div>
-    <div class="col-md-7">
-      <img class="img-responsive pull-right" src="../assets/images/office_anywhere.jpg"/>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-7">
-      <img class="img-responsive pull-left" src="../assets/images/github_laptop.jpg"/>
-    </div>
-    <div class="col-md-5">
-      <h3>GitHub</h3>
-      <p>
-        Claws in your leg kitty poochy, roll on the floor purring your whiskers off i like big cats and i can not lie.
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-5">
-      <h3>The Flame Paladin Saga</h3>
-      <p>
-        Hiss and stare at nothing then run suddenly away wake up human for food at 4am or ask for petting pounce on unsuspecting person so run outside as soon as door open.
-      </p>
-    </div>
-    <div class="col-md-7">
-      <img class="img-responsive pull-right" src="../assets/images/flame_paladin.jpg"/>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-7">
-      <img class="img-responsive pull-left" src="../assets/images/old_flame_paladin.jpg"/>
-    </div>
-    <div class="col-md-5">
-      <h3>The Last Flame Templar</h3>
-      <p>
-        Annoy owner until he gives you food say meow repeatedly until belly rubs, feels good lick the curtain just to be annoying.
-      </p>
-    </div>
-  </div>
+  </section >
 
 </div>

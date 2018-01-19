@@ -6,11 +6,13 @@ import { PortfolioRoutingModule } from './portfolio-routing.module';
 
 import { PortfolioComponent } from './portfolio.component';
 
+import { PortProjService } from './port-proj.service';
+
 @NgModule({
   imports:[ CommonModule, PortfolioRoutingModule ],
   exports:[],
   declarations:[ PortfolioComponent ],
-  providers:[]
+  providers:[ PortProjService ]
 })
 
 export class PortfolioModule {}
