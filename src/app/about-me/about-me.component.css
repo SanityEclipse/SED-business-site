@@ -1,8 +1,10 @@
 img {
   height: auto;
   width: 30vh;
+  border: 1px solid #8d8d8d;
 }
 
 p {
   font-size: 1.50em;
+  font-family:'Oswaldo', sans-serif ;
 }
