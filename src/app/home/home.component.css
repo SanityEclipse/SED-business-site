@@ -1,4 +1,12 @@
 img {
-  height: auto;
-  width: 25vh;
+
+}
+
+.jumbotron {
+
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Oswald', sans-serif;
 }
