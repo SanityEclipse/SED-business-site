@@ -6,3 +6,11 @@ li > a {
   color: #000000;
   font-size: 3em;
 }
+
+.icon-bar {
+  background-color: grey;
+}
+
+button {
+    border: 1px solid grey;
+}
