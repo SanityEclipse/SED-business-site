@@ -6,8 +6,13 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
+
+//ngx-bootstrap
+import { CollapseModule } from "../../../node_modules/ngx-bootstrap/collapse/collapse.module";
+
+
 @NgModule({
-  imports:      [ CommonModule, RouterModule ],
+  imports:      [ CommonModule, RouterModule, CollapseModule ],
   declarations: [ HeaderComponent, NavbarComponent, FooterComponent ],
   exports:      [ HeaderComponent, NavbarComponent, FooterComponent ],
   providers:    []
