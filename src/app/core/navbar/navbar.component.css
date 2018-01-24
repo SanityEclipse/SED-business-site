@@ -11,6 +11,12 @@ li > a {
   background-color: grey;
 }
 
+.navbar-default {
+  color: #ffffff;
+  background-color: #ffffff;
+  border: #ffffff;
+}
+
 button {
     border: 1px solid grey;
 }
