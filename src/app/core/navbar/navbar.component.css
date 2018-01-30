@@ -20,3 +20,9 @@ li > a {
 button {
     border: 1px solid grey;
 }
+
+@media only screen and (max-width: 992px) {
+  li {
+    font-size: .75em;
+  }
+}
