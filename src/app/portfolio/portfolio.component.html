@@ -2,34 +2,57 @@
 
   <section  *ngIf="portProj.id === 0 || portProj.id%2 === 0">
     <div class="row" id="{{ portProj.id }}">
-      <div class="col-md-7">
+      <div class="col-sm-6 col-md-7 center-block">
         <img class="img-responsive img-rounded pull-left" src="{{ portProj.img }}"/>
       </div>
-      <div class="col-md-5">
-        <h3> {{ portProj.title }} </h3>
-        <hr>
+      <div class="col-sm-6 col-md-5">
+        <a href="{{ portProj.url }}" style="color:black" target="_blank">
+          <h3> {{ portProj.title }} </h3>
+        </a>
+        <hr class="hidden-sm">
         <p>  {{ portProj.desc }}  </p>
         <div class=text-center>
-          <a class="btn" role="button" href="{{ portProj.url }}" target="_blank">View</a>
+          <a class="btn hidden-xs hidden-sm" role="button" href="{{ portProj.url }}" target="_blank">View</a>
         </div>
       </div>
     </div>
   </section >
 
   <section *ngIf="portProj.id === 1 || portProj.id%2 !== 0">
-    <div class="row" id="{{ portProj.id }}">
-      <div class="col-md-5">
-        <h3> {{ portProj.title }} </h3>
-        <hr>
+    <div class="row hidden-xs" id="{{ portProj.id }}">
+      <div class="col-sm-6 col-md-5">
+        <a href="{{ portProj.url }}" style="color:black" target="_blank">
+          <h3> {{ portProj.title }} </h3>
+        </a>
+        <hr class="hidden-sm">
         <p>  {{ portProj.desc }}  </p>
         <div class=text-center>
-          <a class="btn" role="button" href="{{ portProj.url }}" target="_blank">View</a>
+          <a class="btn hidden-xs hidden-sm" role="button" href="{{ portProj.url }}" target="_blank">View</a>
         </div>
       </div>
-      <div class="col-md-7">
+      <div class="col-sm-6 col-md-7">
         <img class="img-responsive img-rounded pull-right" src="{{ portProj.img }}"/>
       </div>
     </div>
+
+    <!-- ONLY VISIBLE IN MOBILE VIEW -->
+    <div class="row visible-xs" id="{{ portProj.id }}">
+      <div class="col-sm-6 col-md-7 center-block">
+        <img class="img-responsive img-rounded pull-left" src="{{ portProj.img }}"/>
+      </div>
+      <div class="col-sm-6 col-md-5">
+        <a href="{{ portProj.url }}" style="color:black" target="_blank">
+          <h3> {{ portProj.title }} </h3>
+        </a>
+        <hr class="hidden-sm">
+        <p>  {{ portProj.desc }}  </p>
+        <div class=text-center>
+          <a class="btn hidden-xs hidden-sm" role="button" href="{{ portProj.url }}" target="_blank">View</a>
+        </div>
+      </div>
+    </div>
+
+
   </section >
 
 </div>
