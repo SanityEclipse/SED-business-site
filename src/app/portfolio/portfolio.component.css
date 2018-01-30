@@ -29,3 +29,9 @@ div {
 img {
   border: 1px solid #8d8d8d;
 }
+
+/*@media only screen and (max-width: 768px) {
+  h3 {
+
+  }
+}*/
