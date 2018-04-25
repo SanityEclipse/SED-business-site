@@ -7,6 +7,12 @@ export class InMemoryDataService implements InMemoryDbService {
     const devExps = [
       {
         id: 1,
+        title: 'Teaching Assistant | Univeristy of Denver',
+        date: 'April 2018 - Present',
+        projects:""
+      },
+      {
+        id: 2,
         title: 'Web Devloper | Freelance and Contract',
         date: 'January 2017 - Present',
         projects: [
@@ -23,8 +29,8 @@ export class InMemoryDataService implements InMemoryDbService {
         ]
       },
       {
-        id: 2,
-        title: 'Full category Developer | Rebric.io',
+        id: 3,
+        title: 'Full Stack Developer | Rebric.io',
         date: 'July 2017 - October 2017',
         projects: [
          {
@@ -35,14 +41,14 @@ export class InMemoryDataService implements InMemoryDbService {
         ]
       },
       {
-        id: 3,
+        id: 4,
         title: 'Application Developer | Lead Virtue, LLC',
         date: 'May 2017 - July 2017',
         projects: [
          {
            id: 1,
            name:"",
-           desc: "Created applications for accepting payment, lead generation, and customer service. Modernized code of current assets",
+           desc: "Created applications for accepting payment, lead generation, and customer service. Modernized code of current assets.",
          },
         ]
        }
