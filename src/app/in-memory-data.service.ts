@@ -13,7 +13,7 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: 2,
-        title: 'Web Devloper | Freelance and Contract',
+        title: 'Web Developer | Freelance and Contract',
         date: 'January 2017 - Present',
         projects: [
           {
