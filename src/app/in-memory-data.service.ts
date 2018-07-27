@@ -166,13 +166,6 @@ export class InMemoryDataService implements InMemoryDbService {
     ]
     const portProjs = [
       {
-        id: 0,
-        title: "Rebric.io Business Site",
-        img: "../assets/images/rebric_laptop.jpg",
-        desc: "The client-facing website for Rebric.io. Features component-driven architecture, and state management via Redux. Created with ReactJS, Redux, Bootstrap 3.7, and Sass.",
-        url: "http://rebric.io",
-      },
-      {
         id: 1,
         title: "Office Anywhere",
         img: "../assets/images/office_anywhere.jpg",
