@@ -6,10 +6,28 @@ export class InMemoryDataService implements InMemoryDbService {
 
     const devExps = [
       {
+        id: 0,
+        title: 'Java Developer | Payfone',
+        date: 'September 2018 - current',
+        projects: [
+          {
+            id: 1,
+            name: "",
+            desc: "Utilize Java and Spring technologies to create new features for Payfone's proprietary security software. Build and deploy new microservices for a variety of clients, supporting a wide variety of needs. Participate in a collaborative, AGILE-driven, iterative development process."
+          }
+        ]
+      },
+      {
         id: 1,
         title: 'Teaching Assistant | Univeristy of Denver',
-        date: 'April 2018 - Present',
-        projects:""
+        date: 'April 2018 - July 2018',
+        projects: [
+          {
+            id: 1,
+            name: "",
+            desc: "Mentored and instructed aspiring junior developers through the Univeristy of Denver fullstack web development program. Graded projects, offered feedback, and provided one-on-one instruction."
+          }
+        ]
       },
       {
         id: 2,
@@ -115,7 +133,7 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: 9,
-        skill:"Laravel",
+        skill:"Spring",
         category: "framework"
       },
       {
@@ -163,6 +181,11 @@ export class InMemoryDataService implements InMemoryDbService {
         skill: "TypeScript",
         category: "front"
       },
+      {
+        id:19,
+        skill: "Java",
+        category: "back"
+      }
     ]
     const portProjs = [
       {
