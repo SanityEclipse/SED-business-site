@@ -1,12 +1,9 @@
-img {
-
-}
-
-.jumbotron {
-
-}
-
 h1 {
   font-size: 5em;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 4em;
   font-family: 'Oswald', sans-serif;
 }

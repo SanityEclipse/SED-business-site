@@ -3,32 +3,31 @@
   <nav class="navbar navbar-default" role="navigation">
 
     <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
+
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sed-nav-collapse" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" (click)="toggleState()">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- <a class="navbar-brand" href="#"></a> -->
+        <p class="navbar-brand visible-xs">Thomas Rizzo III | Front End Solutions</p>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="sed-nav-collapse">
+      <div class="collapse navbar-collapse" [ngClass]="{ 'in': isIn }" id="sed-nav-collapse">
         <ul class="nav navbar-nav">
-          <li><a routerLink="home"      routerLinkActive='active'>Home<span class="sr-only">(current)</span></a></li>
-          <li><a routerLink="about-me"  routerLinkActive='active'>About</a></li>
-          <li><a routerLink="portfolio" routerLinkActive='active'>Portfolio</a></li>
-          <li><a routerLink="resume"    routerLinkActive='active'>Résumé</a></li>
-          <li><a routerLink="contact"   routerLinkActive='active'>Contact</a></li>
+          <li><a (click)="toggleState()" routerLink="home"      routerLinkActive='active'>Home<span class="sr-only">(current)</span></a></li>
+          <li><a (click)="toggleState()" routerLink="about-me"  routerLinkActive='active'>About</a></li>
+          <li><a (click)="toggleState()" routerLink="portfolio" routerLinkActive='active'>Portfolio</a></li>
+          <li><a (click)="toggleState()" routerLink="resume"    routerLinkActive='active'>Résumé</a></li>
+          <li><a (click)="toggleState()" routerLink="contact"   routerLinkActive='active'>Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
 
     </div><!-- /.container-fluid -->
 
   </nav>
-  <hr style="border-top: 7px solid #000000; margin-bottom:-18px"/>
-  <hr style="border-top: 3px solid #000000;"/>
+  <hr class="hidden-xs" style="border-top: 7px solid #000000; margin-bottom:-18px"/>
+  <hr class="hidden-xs" style="border-top: 3px solid #000000;"/>
 
 </div>
