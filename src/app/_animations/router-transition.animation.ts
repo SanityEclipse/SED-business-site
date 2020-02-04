@@ -15,8 +15,8 @@ export const routerTransition =
         style({
           opacity: 0,
           position: 'fixed',
-          width:'100%',
-        }), {optional:true}
+          width: '100%',
+        }), {optional: true}
       ),
       // PAGE LEAVING
       query(':leave',
@@ -24,10 +24,10 @@ export const routerTransition =
           style({
             opacity: 0,
             position: 'fixed',
-            width:'100%',
+            width: '100%',
           })
         ),
-        {optional:true}
+        {optional: true}
       ),
       // PAGE ENTERING
       query(':enter',
@@ -36,7 +36,7 @@ export const routerTransition =
             opacity: 1,
           })
         ),
-        {optional:true}
+        {optional: true}
       ),
     ])
-  ])
+  ]);
