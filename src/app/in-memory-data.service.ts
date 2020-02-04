@@ -8,14 +8,14 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 0,
         title: 'Software Developer II | Travelport',
-        date: 'September 2018 - current',
+        date: 'November 2019 - current',
         projects: [
           {
             id: 1,
             name: '',
             desc: `Create and update data streaming software for travel businesses using NodeJs.
             Update existing code base to conform to ES6 conventions, as well as implementing
-            code clarity fixes and unit testing. Monitor, implement, and analyze Kafka topics to
+            code clarity fixes, and unit testing. Monitor, implement, and analyze Kafka topics to
             provide customers with access to streams.`
           }
         ]
@@ -23,7 +23,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 1,
         title: 'Java Developer | Payfone',
-        date: 'September 2018 - current',
+        date: 'September 2018 - November 2019',
         projects: [
           {
             id: 1,
