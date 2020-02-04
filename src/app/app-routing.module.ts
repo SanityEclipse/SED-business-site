@@ -14,28 +14,28 @@ const routes: Routes = [
   },
   {
     path: 'about-me',
-    loadChildren: 'app/about-me/about-me.module#AboutMeModule',
+    loadChildren: () => import('app/about-me/about-me.module').then(m => m.AboutMeModule),
     data: {
       animation: 'about-me'
     }
   },
   {
     path: 'resume',
-    loadChildren: 'app/resume/resume.module#ResumeModule',
+    loadChildren: () => import('app/resume/resume.module').then(m => m.ResumeModule),
     data: {
       animation: 'resume'
     }
   },
   {
     path: 'contact',
-    loadChildren: 'app/contact/contact.module#ContactModule',
+    loadChildren: () => import('app/contact/contact.module').then(m => m.ContactModule),
     data: {
       animation: 'contact'
     }
   },
   {
     path: 'portfolio',
-    loadChildren: 'app/portfolio/portfolio.module#PortfolioModule',
+    loadChildren: () => import('app/portfolio/portfolio.module').then(m => m.PortfolioModule),
     data: {
       animation: 'portfolio'
     }
