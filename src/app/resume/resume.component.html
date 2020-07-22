@@ -1,38 +1,37 @@
 <div class="container">
-
   <div class="col-md-9">
-
     <h1>Developer Experience</h1>
 
     <div *ngFor="let devExp of devExps; let i = index">
+      <h3>{{ devExp.title }}</h3>
 
-      <h3>{{devExp.title}}</h3>
-
-      <h4>{{devExp.date}}</h4>
-      <h4> Projects Completed / Duties: </h4>
-        <div *ngFor="let subDevExp of devExp['projects']">
-          <p>
-            <b>{{subDevExp.name}}</b>
-          </p>
-          <p>
-            {{subDevExp.desc}}
-          </p>
-        </div>
+      <h4>{{ devExp.date }}</h4>
+      <h4>Projects Completed / Duties:</h4>
+      <div *ngFor="let subDevExp of devExp['projects']">
+        <p>
+          <b>{{ subDevExp.name }}</b>
+        </p>
+        <p>
+          {{ subDevExp.desc }}
+        </p>
+      </div>
     </div>
 
     <h1>Education</h1>
 
     <div *ngFor="let eduExp of eduExps; let i = index">
-      <p><b> {{ eduExp.degree }} </b></p>
-      <p><em> {{ eduExp.school }} </em></p>
-      <p> {{ eduExp.date }} </p>
+      <p>
+        <b> {{ eduExp.degree }} </b>
+      </p>
+      <p>
+        <em> {{ eduExp.school }} </em>
+      </p>
+      <p>{{ eduExp.date }}</p>
     </div>
-
   </div>
 
   <div class="col-md-3">
-
-    <h1> Skills </h1>
+    <h1>Skills</h1>
 
     <span> Front End </span>
 
@@ -44,8 +43,7 @@
       </ul>
     </div>
 
-    <span> Frameworks </span>
-
+    <span> Frameworks / Libraries </span>
 
     <div class="row">
       <ul *ngFor="let mySkill of mySkills; let i = index">
@@ -74,7 +72,5 @@
         </li>
       </ul>
     </div>
-
   </div>
-
 </div>
