@@ -5,20 +5,32 @@ export class InMemoryDataService implements InMemoryDbService {
     const devExps = [
       {
         id: 0,
-        title: "Software Engineer | CenturyLink",
-        date: "May 2020 - current",
+        title: "Software Engineer | QsrSoft",
+        date: "June 2022 - present",
         projects: [
           {
             id: 1,
             name: "",
-            desc: `Create, update, and implement features for the latest software platform using modern JavaScript frameworks, including Vue.js and Node.js.
-            Utilize Jest for unit testing of all application functionality. Participate in a collaborative, iterative development process.
+            desc: `Create and implement services and integrations using Amazon Web Services (AWS), to include Lambda, CodePipline, and CloudWatch. Navigate through and manage data via mySQL/mySQL Workbench. Participate in scrum ceremonies, to include daily stand-ups, retros, sprint planning, etc.
             `,
           },
         ],
       },
       {
         id: 1,
+        title: "Senior Software Engineer | LUMEN (formerly CenturyLink)",
+        date: "May 2020 - June 2022",
+        projects: [
+          {
+            id: 1,
+            name: "",
+            desc: `Create and Implement micro services using TypeScript and Amazon Web Services (AWS), to include Lambda, CodePipline, DynamoDB, and CloudWatch. Work collaboratively with other developers, including group sessions and pair programming. Participate in scrum ceremonies, to include daily stand-ups, retros, sprint planning, etc.
+            `,
+          },
+        ],
+      },
+      {
+        id: 2,
         title: "Software Developer II | Travelport",
         date: "November 2019 - April 2020",
         projects: [
@@ -33,8 +45,8 @@ export class InMemoryDataService implements InMemoryDbService {
         ],
       },
       {
-        id: 2,
-        title: "Java Developer | Payfone",
+        id: 3,
+        title: "Java Developer | Prove (formerly Payfone)",
         date: "September 2018 - November 2019",
         projects: [
           {
@@ -48,7 +60,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ],
       },
       {
-        id: 3,
+        id: 4,
         title: "Teaching Assistant | University of Denver",
         date: "April 2018 - July 2018",
         projects: [
@@ -61,7 +73,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ],
       },
       {
-        id: 4,
+        id: 5,
         title: "Full Stack Developer | Rebric.io",
         date: "July 2017 - October 2017",
         projects: [
@@ -75,7 +87,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ],
       },
       {
-        id: 5,
+        id: 6,
         title: "Application Developer | Lead Virtue, LLC",
         date: "May 2017 - July 2017",
         projects: [
@@ -110,7 +122,7 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: 1,
-        skill: "Angular 2(5)",
+        skill: "Angular",
         category: "framework",
       },
       {
@@ -163,21 +175,21 @@ export class InMemoryDataService implements InMemoryDbService {
         skill: "Node.js",
         category: "back",
       },
-      {
-        id: 12,
-        skill: "PHP",
-        category: "back",
-      },
-      {
-        id: 13,
-        skill: "ReactJS",
-        category: "framework",
-      },
-      {
-        id: 14,
-        skill: "Redux",
-        category: "framework",
-      },
+      // {
+      //   id: 12,
+      //   skill: "PHP",
+      //   category: "back",
+      // },
+      // {
+      //   id: 13,
+      //   skill: "ReactJS",
+      //   category: "framework",
+      // },
+      // {
+      //   id: 14,
+      //   skill: "Redux",
+      //   category: "framework",
+      // },
       {
         id: 15,
         skill: "MySQL / PostgreSQL",
@@ -212,6 +224,11 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 21,
         skill: "NuxtJS",
         category: "framework",
+      },
+      {
+        id: 21,
+        skill: "Mocha/Chai",
+        category: "dev",
       },
     ];
     const portProjs = [
